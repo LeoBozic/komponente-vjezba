@@ -1,12 +1,12 @@
 import "./App.css";
-import { Komponenta1, Komponenta2 } from "./Components/index";
+import { Komponenta1, Komponenta2 } from "./Components";
 
 function App() {
   function duljinaTeksta(str) {
     return str.length;
   }
 
-  const string = "dfslsdkdsfstfsdlsdf";
+  const string = "dfslsdksfssdlsdf";
 
   return (
     <div className="App">

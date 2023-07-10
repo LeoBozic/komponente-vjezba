@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Komponenta1, Komponenta2 } from "./index";
 
 function App() {
+  function duljinaTeksta(str) {
+    return str.length;
+  }
+
+  const string = "dflsdkdfstfdlsdf";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {duljinaTeksta(string) % 2 === 0 && <Komponenta1 />}
+      {duljinaTeksta(string) % 2 === 1 && <Komponenta2 />}
     </div>
   );
 }
